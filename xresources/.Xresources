@@ -1,0 +1,78 @@
+! URXvt Themes
+!#include ".colorschemes/nord"
+#include ".colorschemes/solarized.dark"
+
+Xft.lcdfilter: lcddefault
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hinting: full
+Xft.hintstyle: hintslight
+Xft.rgba: rgb
+Xft.dpi: 96
+
+Xcursor*theme: Adwaita
+
+
+URxvt.perl-ext-common: default,resize-font,clipboard,vtwheel,matcher
+URxvt.url-launcher: /usr/bin/google-chrome
+URxvt.matcher.button: 1
+URxvt.matcher.rend.0: Uline Bold fg5
+
+URxvt.keysym.C-equal: resize-font:reset
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger: C-Up
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+
+! clean up urxvt, add keybinds
+URxvt.intensityStyles: false
+URxvt.scrollBar: false
+URxvt.letterSpace: -1 
+
+! font
+!URxvt.font: xft:Meslo LG L For Powerline-11:hinting=True;antialias:True
+!URxvt.font: xft:Overpass Mono-11:hinting=True;antialias:True, xft:Droid Sans Mono For Powerline-12
+URxvt.font: xft:Fira Mono For Powerline-11:hinting=True;antialias:True, xft:Droid Sans Mono For Powerline-12
+URxvt.lineSpace:2
+
+! terminal padding
+URxvt.internalBorder: 30
+
+! transparency
+!URxvt.transparent:   true
+!URxvt.tintColor:     white
+!URxvt.shading:       20
+URxvt.depth: 32
+URxvt.background: rgba:0000/0000/0200/c800
+
+! rofi
+rofi.modi: run,drun,window
+rofi.font: Overpass 14
+rofi.width: 50
+rofi.lines: 20 
+rofi.columns: 1
+rofi.yoffset:24 
+rofi.terminal: urxvt256c-ml
+!rofi.fake-transparency: true
+!rofi.opacity: 40
+
+!                    bg       fg      altbg    hlbg     hlfg
+!rofi.color-normal: argb:ee000000, #93a1a1, #ee000000, #002b36, #268bd2
+!rofi.color-urgent: argb:00000000, #ebdbb2, #262626, #ebdbb2, #262626
+!rofi.color-active: argb:00000000, #fabd2f, #262626, #ebdbb2, #262626
+!!rofi.color-window: #262626, #ebdbb2, #ebdbb2
+!rofi.color-window: argb:00000000,  #3c3836, #ee268bd2 
+!!rofi.color-normal: #000000, #458588, #000000, #458588, #000000
+!rofi.bw: 0 
+!rofi.bordercolor: #268bd2
+!rofi.fullscren: false
+! location: 1 2 3 / 8 0 4 / 7 6 5
+!rofi.location: 0
+!rofi.padding: 100 
+!rofi.fuzzy: true
+!rofi.separator-style: line
+!rofi.hide-scrollbar: true
+!rofi.fullscreen: true
